@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('QE') {
       steps {
-        sh 'mkdir "carpeta1"'
+        sh 'ls'
+        sh 'mkdir carpeta1'
+        sh 'ls'
       }
     }
 
