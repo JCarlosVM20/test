@@ -4,7 +4,7 @@ pipeline {
     stage('QA') {
       agent any
       steps {
-        sh 'sh echo "hello world"'
+        sh 'echo "hello world"'
       }
     }
 
