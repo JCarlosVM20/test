@@ -4,7 +4,7 @@ pipeline {
     stage('QE') {
       steps {
         sh 'pwd'
-        sh 'ls'
+        sh 'ruby ruby/tests.rb'
       }
     }
 
