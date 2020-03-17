@@ -3,10 +3,15 @@ pipeline {
   stages {
     stage('QE') {
       steps {
+        sh 'echo "checking path"'
         sh 'pwd'
-        sh 'ruby ruby/tests.rb'
+            }
       }
+      stage('Unit Test') {
+        steps {
+        sh 'echo "In progress"'
+        sh 'ruby ruby/tests.rb'
+              }
+        }
     }
-
-  }
 }
