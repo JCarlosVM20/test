@@ -10,7 +10,7 @@ pipeline {
       stage('Unit Test') {
         steps {
         
-         sh 'pwd'
+         sh 'ruby ruby/tests.rb || true'
               }
         }
     }
