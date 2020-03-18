@@ -7,11 +7,11 @@ pipeline {
 rubocop'''
             }
       }
-      stage('Unit Test') {
-        steps {
+      //stage('Unit Test') {
+        //steps {
         
-        sh 'echo "prueba"'
-              }
-        }
+        //sh 'echo "prueba"'
+              //}
+        //}
     }
 }
