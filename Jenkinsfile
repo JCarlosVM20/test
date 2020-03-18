@@ -4,13 +4,13 @@ pipeline {
     stage('QE'){
       steps {
         sh label:'', script: '''cd ruby
-rubocop'''
+rubocop ruby tests.rb'''
             }
       }
       stage('Unit Test') {
         steps {
-        sh 'echo "In progress"'
-        sh 'ruby ruby/tests.rb'
+        
+        sh 'echo "prueba"'
               }
         }
     }
