@@ -3,15 +3,15 @@ pipeline {
   stages {
     stage('QE'){
       steps {
-        sh label:'', script: '''cd ruby
-rubocop'''
+        sh 'cd ruby'
+        sh 'rubocop || true'
             }
       }
-      //stage('Unit Test') {
-        //steps {
+      stage('Unit Test') {
+        steps {
         
-        //sh 'echo "prueba"'
-              //}
-        //}
+         sh 'pwd'
+              }
+        }
     }
 }
