@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('QE') timeout(1){
+    stage('QE'){
       steps {
         sh label:'', script: '''cd ruby
 rubocop'''
