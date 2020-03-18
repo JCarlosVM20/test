@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('QE') timeout(1){
       steps {
-        sh : '', script: '''cd ruby
+        sh label:'', script: '''cd ruby
 rubocop'''
             }
       }
