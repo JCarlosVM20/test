@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('QE') {
       steps {
-        sh 'cd ruby'
-        sh 'pwd'
-        sh 'rubocop'
+        sh label: '', script: '''cd ruby
+rubocop'''
             }
       }
       stage('Unit Test') {
